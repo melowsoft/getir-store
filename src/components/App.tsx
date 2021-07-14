@@ -6,14 +6,15 @@ import {Container} from "./AppStyles"
 import { BrandIcon } from './BrandIcon';
 import { Navbar } from './Navbar';
 import { ContentWrapper } from './ContentWrapper';
+import { ContenArea } from './ContenArea';
 
 
 const App = () => {
   return <Provider store={store}>
     <Container>
       <Navbar icon={<BrandIcon />}/>
-      <ContentWrapper >
-        <h1>Hello from Wrapper</h1>
+      <ContentWrapper>
+        <ContenArea />
       </ContentWrapper>
     </Container>
   </Provider>;

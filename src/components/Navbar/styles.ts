@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import {primaryColor} from "../../styles/global"
+import { primaryColor, navbarHeight } from "../../styles/global"
 
 export const Container = styled.div`
    background: ${primaryColor};
-   height: 76px;
+   height: ${navbarHeight};
    width: 100vw;
    display: flex;
    justify-content: center;
