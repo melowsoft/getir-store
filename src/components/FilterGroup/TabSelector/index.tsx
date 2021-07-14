@@ -4,7 +4,7 @@ import {ReactComponent as UnSelected} from "../../../assets/svg/unselected-circl
 import {ReactComponent as BoxUnselect} from "../../../assets/svg/unselected-box.svg"
 import {ReactComponent as BoxSelect} from "../../../assets/svg/selected-box.svg"
 
-import {TabItem, TabTitle} from "./styles"
+import {TabItem, TabTitle, TabList} from "./styles"
 
 interface Props {
   options: {title: string, id: number}[];
@@ -15,22 +15,23 @@ export const TabSelector: React.FC<Props> = ({options, buttonStyle}: Props) => {
     const [active, setActiveState] = useState(1)
 
   return (
-  <>
+  <TabList buttonStyle={buttonStyle}>
     {
-      options.map(tab => (
-        <TabItem onClick={() => setActiveState(tab.id)}>
+      options.map(({title, id}) => (
+        <TabItem key={id} onClick={() => setActiveState(id)}>
+          
           {
           buttonStyle === 'round' 
-          && (tab.id === active ? <Selected /> : <UnSelected />)
+          && (id === active ? <Selected /> : <UnSelected />)
           }
           {
           buttonStyle === 'box' 
-          && (tab.id === active ? <BoxSelect /> : <BoxUnselect />)
+          && (id === active ? <BoxSelect /> : <BoxUnselect />)
           }
-          <TabTitle>{tab.title}</TabTitle>
+          <TabTitle>{title}</TabTitle>
         </TabItem>
       ))
     }
-  </>
+  </TabList>
   )
 }

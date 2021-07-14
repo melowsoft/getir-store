@@ -6,9 +6,9 @@ import { TabSelector } from '../TabSelector'
 import {Container} from "./styles"
 import { SearchBox } from '../SearchBox'
 
-export const Brands: React.FC = () => (
+export const Tags: React.FC = () => (
   <Container>
-    <FilterTitle title="Brands"/>
+    <FilterTitle title="Tags"/>
     <FilterCard height={230}>
       <>
       <SearchBox placeholder="Search Brands"/>
@@ -16,9 +16,9 @@ export const Brands: React.FC = () => (
       buttonStyle="box" 
       options={[
         {title: 'All (18)', id: 1},
-        {title: 'Apple (5)', id: 2},
-        {title: 'LG (4)', id: 3},
-        {title: 'Nike (2)', id: 4},
+        {title: 'Beach (5)', id: 2},
+        {title: 'People (4)', id: 3},
+        {title: 'Food (2)', id: 4},
         ]} 
       />
       </>
