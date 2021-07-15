@@ -5,8 +5,8 @@ export const Container = styled.div`
   background: ${background};
   padding-top: ${navbarHeight};
   margin-top: 38px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 5%;
   height: 100%;
 `

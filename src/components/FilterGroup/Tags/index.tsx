@@ -11,7 +11,7 @@ export const Tags: React.FC = () => (
     <FilterTitle title="Tags"/>
     <FilterCard height={230}>
       <>
-      <SearchBox placeholder="Search Brands"/>
+      <SearchBox placeholder="Search Tags"/>
       <TabSelector
       buttonStyle="box" 
       options={[
