@@ -1,18 +1,19 @@
 import { ActionType } from "../action-types"
+import {Product} from "../interface/product"
 
-interface SearchRepositoriesAction {
-  type: ActionType.SEARCH_REPOSITORIES;
+interface FetchProductsAction {
+  type: ActionType.FETCH_PRODUCTS;
 }
-interface SearchRepositoriesSuccessAction {
-  type: ActionType.SEARCH_REPOSITORIES_SUCCESS;
-  payload: string[];
+interface FetchProductsSuccessAction {
+  type: ActionType.FETCH_PRODUCTS_SUCCESS;
+  payload: Product[];
 }
-interface SearchRepositoriesErrorAction {
-  type: ActionType.SEARCH_REPOSITORIES_ERROR;
+interface FetchProductsErrorAction {
+  type: ActionType.FETCH_PRODUCTS_ERROR;
   payload: string;
 }
 
 export type Action =   
-| SearchRepositoriesAction 
-| SearchRepositoriesSuccessAction 
-| SearchRepositoriesErrorAction
+| FetchProductsAction 
+| FetchProductsSuccessAction 
+| FetchProductsErrorAction

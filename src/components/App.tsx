@@ -1,5 +1,7 @@
+import React,{ useEffect } from 'react';
 import {Provider} from 'react-redux';
 import { store } from '../state'
+import {useActions} from "../hooks/useAction"
 
 
 import {Container} from "./AppStyles"
@@ -10,14 +12,16 @@ import { ContenArea } from './ContenArea';
 
 
 const App = () => {
-  return <Provider store={store}>
+  return (
+  <Provider store={store}>
     <Container>
       <Navbar icon={<BrandIcon />}/>
       <ContentWrapper>
         <ContenArea />
       </ContentWrapper>
     </Container>
-  </Provider>;
+  </Provider>
+  );
   
 }
 

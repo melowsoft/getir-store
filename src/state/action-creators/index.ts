@@ -3,31 +3,23 @@ import { Dispatch } from "redux"
 import { ActionType } from '../action-types';
 import { Action } from "../actions"
 
-export const searchRepositories = (term: string) => {
+export const fetchProducts = () => {
   return async (dispatch: Dispatch<Action>) => {
     dispatch({
-      type: ActionType.SEARCH_REPOSITORIES
+      type: ActionType.FETCH_PRODUCTS
     })
 
     try {
-      const {data} = await axios.get('https://registry.npmjs.org/-/v1/search', {
-        params: {
-          text: term
-        }
-      })
-
-     const names = data.objects.map((result: any) => {
-        return result.package.name;
-      });
+      const {data} = await axios.get('http://localhost:5000/products')
 
      dispatch({
-       type: ActionType.SEARCH_REPOSITORIES_SUCCESS,
-       payload: names
+       type: ActionType.FETCH_PRODUCTS_SUCCESS,
+       payload: data
      }) 
 
     } catch (err) {
       dispatch({
-        type: ActionType.SEARCH_REPOSITORIES_ERROR,
+        type: ActionType.FETCH_PRODUCTS_ERROR,
         payload: err.message
       })
     }

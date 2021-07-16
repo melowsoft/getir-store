@@ -33,5 +33,5 @@ font-weight: 600;
 font-size: 14px;
 line-height: 20px;
 color: #191919;
-margin-bottom: 5px;
+margin-bottom: 7px;
 `  

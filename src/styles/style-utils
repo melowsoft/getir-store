@@ -1,5 +1,22 @@
 import { css } from 'styled-components';
 
+interface DeviceBreakPoints {
+  xs: string;
+  sm: string;
+  md: string;
+  lg: string;
+  xlg: string;
+  xxlg: string;
+}
+interface BreakPoints {
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xlg: number;
+  xxlg: number;
+}
+
 export const deviceBreakpoints = {
   xs: '425px',
   sm: '768px',
@@ -17,6 +34,8 @@ export const deviceBreakpointsWithoutUnit = {
   xlg: 1440,
   xxlg: 1650,
 };
+
+
 
 // if min-width is 768px, max-width should be 767px
 export const breakpoint = Object.keys(deviceBreakpoints).reduce(

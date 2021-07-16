@@ -4,15 +4,15 @@ import {useActions} from '../hooks/useAction'
 
 const RepositoriesList: React.FC = () => {
   const [term, setTerm] = useState('')
-  const { searchRepositories } = useActions();
-  const { data, error, loading } = useTypedSelector((state) => state.repositories)
+  const { fetchProducts } = useActions();
+  const { data, error, loading } = useTypedSelector((state) => state.products)
 
 
 
 const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
   event.preventDefault();
 
-  searchRepositories(term);
+  fetchProducts();
 }
 
   return <div>
