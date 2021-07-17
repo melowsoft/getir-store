@@ -1,27 +1,36 @@
 import React from 'react'
 import { FilterTitle } from '../FilterTitle'
 import { FilterCard } from '../FilterCard'
-import { TabSelector } from '../TabSelector'
+import {  TabSelectorTag } from '../TabSelectorTag'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
 
 import {Container} from "./styles"
 import { SearchBox } from '../SearchBox'
 
-export const Tags: React.FC = () => (
+interface Props {
+  tagTerm: string;
+  setTagTerm(brand: any): any;
+}
+
+export const Tags: React.FC<Props> = ({tagTerm, setTagTerm}: Props) => {
+  const { data, error, loading } = useTypedSelector((state) => state.products)
+  const tagsOptions = data.tags.map((prod, index) => {
+    return {title: prod, id: index + 1}
+  })
+ return (
   <Container>
     <FilterTitle title="Tags"/>
     <FilterCard height={230}>
       <>
       <SearchBox placeholder="Search Tags"/>
-      <TabSelector
-      buttonStyle="box" 
-      options={[
-        {title: 'All (18)', id: 1},
-        {title: 'Beach (5)', id: 2},
-        {title: 'People (4)', id: 3},
-        {title: 'Food (2)', id: 4},
-        ]} 
+      <TabSelectorTag
+        buttonStyle="box" 
+        options={tagsOptions}
+        tagTerm={tagTerm}
+        setTagTerm={setTagTerm} 
       />
       </>
     </FilterCard>
   </Container>
-)
+  )
+}

@@ -7,24 +7,24 @@ import {Product} from "../interface/product"
 interface RepositoriesState {
   loading: boolean;
   error: string | null;
-  data: Product[];
+  data: {products: Product[], pagination: {totalPages: number}, tags: string[], brands: string[]};
 }
 
 const initialState = {
   loading: false,
   error: null,
-  data: []
+  data: {products: [], pagination: {totalPages: 0}, tags: [], brands: []}
 }
 
 const reducer = (state: RepositoriesState = initialState, action: Action
   ): RepositoriesState => {
      switch (action.type) {
         case ActionType.FETCH_PRODUCTS:
-          return { loading: true, error: null, data: [] }
+          return { loading: true, error: null, data: {products: [], pagination: {totalPages: 0}, tags: [], brands: []} }
         case ActionType.FETCH_PRODUCTS_SUCCESS:
           return { loading: false, error: null, data: action.payload }
         case ActionType.FETCH_PRODUCTS_ERROR:
-          return { loading: false, error: action.payload, data: [] }
+          return { loading: false, error: action.payload, data: {products: [], pagination: {totalPages: 0}, tags: [], brands: []} }
         default:
           return state;
      } 

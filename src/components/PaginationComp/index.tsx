@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ReactPaginate from 'react-paginate'
 import {Container, NextWrap, PrevWrap} from "./styles"
-import JsonData from "../../assets/data/companies.json"
 import {ReactComponent as Next} from "../../assets/svg/next.svg"
 import {ReactComponent as Prev} from "../../assets/svg/prev.svg"
 

@@ -6,7 +6,7 @@ interface FetchProductsAction {
 }
 interface FetchProductsSuccessAction {
   type: ActionType.FETCH_PRODUCTS_SUCCESS;
-  payload: Product[];
+  payload: {products: Product[], pagination: {totalPages: number}, tags: string[], brands: string[]};
 }
 interface FetchProductsErrorAction {
   type: ActionType.FETCH_PRODUCTS_ERROR;

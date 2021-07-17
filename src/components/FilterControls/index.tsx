@@ -5,10 +5,23 @@ import { Tags } from '../FilterGroup/Tags'
 
 import { Container } from "./styles"
 
-export const FilterControls: React.FC = () => (
+interface Props {
+  setTagTerm(brand: any): any;
+  setBrandTerm(brand: any): any;
+  setFilter(brand: string): any;
+  brandTerm: string;
+  tagTerm: string;
+}
+
+export const FilterControls: React.FC<Props> = ({ 
+  setFilter, 
+  setBrandTerm,
+  setTagTerm,
+  tagTerm,
+  brandTerm}: Props) => (
   <Container>
-    <Sorting />
-    <Brands />
-    <Tags />
+    <Sorting setFilter={setFilter}/>
+    <Brands setBrand={setBrandTerm} brandTerm={brandTerm}/>
+    <Tags tagTerm={tagTerm} setTagTerm={setTagTerm}/>
   </Container>
 )

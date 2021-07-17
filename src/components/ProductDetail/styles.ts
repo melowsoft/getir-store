@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
 width: 100%;
 height: 225px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 `
 
 export const ImageWrapper = styled.div`
@@ -16,6 +19,9 @@ export const Image = styled.div`
 width: 92px;
 height: 92px;
 background: #C4C4C4;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 `
 export const Price = styled.p`
 font-family: Helvetica;

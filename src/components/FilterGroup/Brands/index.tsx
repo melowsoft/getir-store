@@ -1,27 +1,36 @@
 import React from 'react'
 import { FilterTitle } from '../FilterTitle'
 import { FilterCard } from '../FilterCard'
-import { TabSelector } from '../TabSelector'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
 
 import {Container} from "./styles"
 import { SearchBox } from '../SearchBox'
+import { TabSelectorBrand } from '../TabSelectorBrand'
 
-export const Brands: React.FC = () => (
-  <Container>
+interface Props {
+  setBrand(brand: any): any;
+  brandTerm: string;
+}
+
+export const Brands: React.FC<Props> = ({setBrand, brandTerm}: Props) => {
+  const { data, error, loading } = useTypedSelector((state) => state.products)
+  const brandOptions = data.brands.map((brand, index) => {
+    return {title: brand, id: index + 1}
+  })
+
+ return (
+ <Container>
     <FilterTitle title="Brands"/>
     <FilterCard height={230}>
       <>
       <SearchBox placeholder="Search Brands"/>
-      <TabSelector
-      buttonStyle="box" 
-      options={[
-        {title: 'All (18)', id: 1},
-        {title: 'Apple (5)', id: 2},
-        {title: 'LG (4)', id: 3},
-        {title: 'Nike (2)', id: 4},
-        ]} 
+      <TabSelectorBrand
+        buttonStyle="box" 
+        options={brandOptions} 
+        setBrand={setBrand}
+        brandTerm={brandTerm}
       />
       </>
     </FilterCard>
-  </Container>
-)
+  </Container>)
+}

@@ -1,22 +1,28 @@
 import React from 'react'
 import { FilterTitle } from '../FilterTitle'
 import { FilterCard } from '../FilterCard'
-import { TabSelector } from '../TabSelector'
+
 
 import {Container} from "./styles"
+import { TabSelectorSort } from '../TabSelectorSort'
 
-export const Sorting: React.FC = () => (
+interface Props {
+  setFilter(brand: string): any;
+}
+
+export const Sorting: React.FC<Props> = ({setFilter}: Props) => (
   <Container>
     <FilterTitle title="Sorting"/>
     <FilterCard>
-      <TabSelector
+      <TabSelectorSort
       buttonStyle="round" 
       options={[
-        {title: 'Price low to high', id: 1},
-        {title: 'Price high to low', id: 2},
-        {title: 'New to old', id: 3},
-        {title: 'Old to new', id: 4},
-        ]} 
+        {title: 'Price low to high', id: 0, constant: 'PRICE-LOW-HIGH'},
+        {title: 'Price high to low', id: 1, constant: 'PRICE-HIGH-LOW'},
+        {title: 'New to old', id: 2, constant: 'NEW-TO-OLD'},
+        {title: 'Old to new', id: 3, constant: 'OLD-To-NEW'},
+        ]}
+        setFilter={setFilter} 
       />
     </FilterCard>
   </Container>
