@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import { PageTitle } from '../PageTItle'
 import { PaginationComp } from '../PaginationComp'
 import { ProductList } from '../ProductList'

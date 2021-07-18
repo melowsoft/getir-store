@@ -3,7 +3,6 @@ import { BasketBox } from '../BasketBox'
 import { FilterControls } from '../FilterControls'
 import { ProductBox } from '../ProductsBox'
 import {useActions} from "../../hooks/useAction"
-import { useTypedSelector } from '../../hooks/useTypedSelector'
 import { animateScroll as scroll} from 'react-scroll'
 
 
@@ -12,7 +11,6 @@ import {Container} from "./styles"
 export const ContenArea: React.FC = () => {
   const { fetchProducts } = useActions();
   const [productType, setproductType] = useState<string>('mug');
-  const { data, error, loading } = useTypedSelector((state) => state.products)
   const [pageNumber, setPageNumber] = useState<number>(0);
   const [sortType, setSortType] = useState<string>('sorting')
   const [filter, setFilter] = useState<string>('PRICE-LOW-HIGH')

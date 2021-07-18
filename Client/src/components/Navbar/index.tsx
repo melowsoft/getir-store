@@ -16,10 +16,16 @@ export const Navbar: React.FC<Props> = ({icon}: Props) => {
   const { toggleBasket } = useActions();
   const { total } = useTypedSelector((state) => state.basket)
 
+  const onBasketToggle = () => {
+      if(total > 0) {
+       toggleBasket()
+      }
+  }
+
     return (
       <Container>
         {icon && icon}
-        <CartButton onClick={() => toggleBasket()}>
+        <CartButton onClick={() => onBasketToggle()}>
           <BasketIcon />
           <CartTotal>₺ {total.toLocaleString()}</CartTotal>
         </CartButton>

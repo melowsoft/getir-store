@@ -24,7 +24,7 @@ export const filterData = (
            return new Date(a.added).valueOf() - new Date(b.added).valueOf()
          })
           break;
-        case "OLD-NEW-TO":
+        case "OLD-TO-NEW":
          sorted = data.sort(function(a, b) {
            return new Date(b.added).valueOf() - new Date(a.added).valueOf()
          })

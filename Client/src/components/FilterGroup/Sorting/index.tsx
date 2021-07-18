@@ -20,7 +20,7 @@ export const Sorting: React.FC<Props> = ({setFilter}: Props) => (
         {title: 'Price low to high', id: 0, constant: 'PRICE-LOW-HIGH'},
         {title: 'Price high to low', id: 1, constant: 'PRICE-HIGH-LOW'},
         {title: 'New to old', id: 2, constant: 'NEW-TO-OLD'},
-        {title: 'Old to new', id: 3, constant: 'OLD-To-NEW'},
+        {title: 'Old to new', id: 3, constant: 'OLD-TO-NEW'},
         ]}
         setFilter={setFilter} 
       />
