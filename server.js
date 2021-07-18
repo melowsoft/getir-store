@@ -13,4 +13,4 @@ app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, './client/build', 'index.html'));
 });
 
-server.listen(port);
+app.listen(port);
