@@ -1,4 +1,4 @@
-import { Product } from "../state/interface/product"
+import { Product } from "../state/interface"
 
 export const filterData = (
   data: Product[],
@@ -44,7 +44,7 @@ export const filterBrands = (data: Product[], brandTerm: string) => {
   if(brandTerm === "ALL"){
      brandFiltered = data 
   } else {
-    brandFiltered = data.filter(prod => prod.manufacturer === brandTerm)
+    brandFiltered = data.filter(prod => prod.manufacturer.toLocaleLowerCase() === brandTerm.toLocaleLowerCase())
   }
   
   return brandFiltered;
@@ -80,7 +80,7 @@ export const compileBrands = (data: Product[]) => {
   let brands: string[] = [];
   
   for (let item of data){
-    brands.push(item.manufacturer)
+    brands.push(item.manufacturer.toLocaleLowerCase())
   }
 
   const uniqueBrands: string[] = brands.filter(onlyUnique).sort()

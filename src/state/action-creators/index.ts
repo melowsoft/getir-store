@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Dispatch } from "redux"
 import { ActionType } from '../action-types';
 import { Action } from "../actions"
-import {Product} from "../interface/product"
+import {CartItem, Product} from "../interface"
 import { filterData, compileTags, filterBrands, filterTags, compileBrands } from "../../helper"
 
 const itemPerPage = 16;
@@ -42,9 +42,6 @@ export const fetchProducts = (
       //Filter categories => Shirts or Mugs
       const filteredCategory = tagsResult.filter((prod: Product) => prod.itemType === productType)
 
-  
-     console.log(filteredCategory, "for checks")
-
       const pageVisited = pageNumber * itemPerPage
       const pageCount = Math.ceil(filteredCategory.length / itemPerPage)
       const paginated = filteredCategory.slice(pageVisited, pageVisited + itemPerPage)
@@ -64,3 +61,43 @@ export const fetchProducts = (
     }
   }
 }
+
+export const addToBasket = (
+  product: CartItem ) => {
+  return async (dispatch: Dispatch<Action>) => {
+
+    try {
+      dispatch({
+        type: ActionType.ADD_TO_BASKET,
+        payload: product
+      }) 
+
+    } catch (err) {
+      console.log(err)
+    }
+  }
+}
+export const removeFromBasket = (
+  product: CartItem ) => {
+  return async (dispatch: Dispatch<Action>) => {
+
+    try {
+      dispatch({
+        type: ActionType.REMOVE_FROM_BASKET,
+        payload: product
+      }) 
+
+    } catch (err) {
+      console.log(err)
+    }
+  }
+}
+
+export const toggleBasket = () => {
+  return async (dispatch: Dispatch<Action>) => {  
+      dispatch({
+        type: ActionType.TOGGLE_BASKET
+      }) 
+  }
+}
+

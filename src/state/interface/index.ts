@@ -8,3 +8,14 @@ export interface Product {
   manufacturer: string;
   itemType: string;
 }
+
+export interface BasketPick {
+  name: string;
+  price: number;
+  quantity: number;
+}
+
+export interface CartItem {
+  name: string;
+  price: number;
+}

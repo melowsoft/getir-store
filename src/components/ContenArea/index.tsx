@@ -68,7 +68,7 @@ export const ContenArea: React.FC = () => {
       setProductType={setproductType}
       onChange={onChange}
     />
-    <BasketBox />
+    <BasketBox showBasket={true}/>
 
   </Container>
   )

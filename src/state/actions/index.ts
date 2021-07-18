@@ -1,8 +1,11 @@
 import { ActionType } from "../action-types"
-import {Product} from "../interface/product"
+import {CartItem, Product} from "../interface"
 
 interface FetchProductsAction {
   type: ActionType.FETCH_PRODUCTS;
+}
+interface ToggleBasketAction {
+  type: ActionType.TOGGLE_BASKET;
 }
 interface FetchProductsSuccessAction {
   type: ActionType.FETCH_PRODUCTS_SUCCESS;
@@ -13,7 +16,19 @@ interface FetchProductsErrorAction {
   payload: string;
 }
 
+interface AddProductToBasket {
+  type: ActionType.ADD_TO_BASKET;
+  payload: CartItem;
+}
+interface RemoveProductFromBasket {
+  type: ActionType.REMOVE_FROM_BASKET;
+  payload: CartItem;
+}
+
 export type Action =   
 | FetchProductsAction 
 | FetchProductsSuccessAction 
 | FetchProductsErrorAction
+| AddProductToBasket
+| RemoveProductFromBasket
+| ToggleBasketAction

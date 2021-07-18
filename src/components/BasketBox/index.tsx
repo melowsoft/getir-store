@@ -1,20 +1,34 @@
 import React from 'react'
 import { BasketItem } from '../BasketItem'
+import { BasketPick } from "../../state/interface"
+import { useTypedSelector } from '../../hooks/useTypedSelector'
+import {useActions} from "../../hooks/useAction" 
 
 import {  BasketWrapper, CheckoutButton, Container, Group, ButtonWrap  } from "./styles"
 
-export const BasketBox: React.FC = () => (
-  <Container>
-    <BasketWrapper>
-      <Group>
-        <BasketItem title="Example Product" amount="₺9,99"/>
-        <BasketItem title="Example Product" amount="₺9,99"/>
-        <BasketItem title="Example Product" amount="₺9,99"/>
-      </Group>
+interface Props {
+  showBasket: boolean
+}
 
-      <ButtonWrap>
-         <CheckoutButton>₺39,99</CheckoutButton>
+export const BasketBox: React.FC<Props> = ({showBasket}: Props) => {
+
+  const { basket, total } = useTypedSelector((state) => state.basket)
+  const { show } = useTypedSelector((state) => state.showBasket)
+   return (<Container>
+     
+ {show &&(<BasketWrapper>
+            <Group>
+              {
+                basket.map((item: BasketPick, index: number) => (
+                  <BasketItem key={index} product={item}/>
+                ))
+              }
+            </Group>
+
+            <ButtonWrap>
+         <CheckoutButton>₺{total.toLocaleString()}</CheckoutButton>
       </ButtonWrap>
-    </BasketWrapper>
-  </Container>
-)
+    </BasketWrapper>)
+    }
+  </Container>)
+}

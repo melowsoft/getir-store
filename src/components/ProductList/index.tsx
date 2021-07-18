@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProductDetail } from '../ProductDetail'
-import {Product} from "../../state/interface/product"
+import {Product} from "../../state/interface"
 
 import {Container} from "./styles"
 

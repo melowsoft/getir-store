@@ -8,7 +8,6 @@ export const BasketWrapper = styled.div`
 border: 8px solid #1EA4CE;
 border-radius: 2px;
 width: 100%;
-min-height: 338px;
 padding: 16px;
 padding-top: 22px;
 display: flex;

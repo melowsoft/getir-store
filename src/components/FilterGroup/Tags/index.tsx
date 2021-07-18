@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { FilterTitle } from '../FilterTitle'
 import { FilterCard } from '../FilterCard'
 import {  TabSelectorTag } from '../TabSelectorTag'
@@ -14,18 +14,39 @@ interface Props {
 
 export const Tags: React.FC<Props> = ({tagTerm, setTagTerm}: Props) => {
   const { data, error, loading } = useTypedSelector((state) => state.products)
-  const tagsOptions = data.tags.map((prod, index) => {
-    return {title: prod, id: index + 1}
-  })
+  const [tags, setTags] = useState<string[]>([])
+  const [searchQuery, setSearchQuery] = useState("")
+
+  const filterTags = (text: string) => {
+    if (text !== ""){
+      const arr = tags.filter(item => item.includes(text.toLocaleLowerCase()))
+    return  setTags(arr)
+    }  
+ }
+
+ const onChange = (query: any) => {
+  setSearchQuery(query)
+  filterTags(query)
+}
+ 
+  useEffect(() => {
+     if(tags.length < 1){
+       setTags(data.tags)
+     }
+  }, [onChange, searchQuery])
+
  return (
   <Container>
     <FilterTitle title="Tags"/>
     <FilterCard height={230}>
       <>
-      <SearchBox placeholder="Search Tags"/>
+      <SearchBox placeholder="Search Tags" 
+        searchQuery={searchQuery}
+        onChange={onChange}
+      />
       <TabSelectorTag
         buttonStyle="box" 
-        options={tagsOptions}
+        options={tags}
         tagTerm={tagTerm}
         setTagTerm={setTagTerm} 
       />

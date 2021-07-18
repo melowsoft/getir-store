@@ -6,7 +6,7 @@ import {ReactComponent as BoxSelect} from "../../../assets/svg/selected-box.svg"
 import {TabItem, TabTitle, TabList} from "./styles"
 
 interface Props {
-  options: {title: string, id: number}[];
+  options: string[];
   buttonStyle: string;
   setBrand(brand: string): any;
   brandTerm: string;
@@ -23,12 +23,12 @@ export const TabSelectorBrand: React.FC<Props> = ({options, buttonStyle, setBran
         <TabTitle>ALL ({options.length})</TabTitle>
       </TabItem>
     {
-      options.map(({title, id}) => (
-        <TabItem key={id} onClick={() => setBrand(title)}>
+      options.map((brand, index) => (
+        <TabItem key={index} onClick={() => setBrand(brand)}>
         {
-         (brandTerm === title ? <BoxSelect /> : <BoxUnselect />)
+         (brandTerm === brand ? <BoxSelect /> : <BoxUnselect />)
         }
-        <TabTitle>{title}</TabTitle>
+        <TabTitle>{brand}</TabTitle>
       </TabItem>
       ))
     }

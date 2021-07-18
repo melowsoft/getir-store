@@ -1,10 +1,10 @@
 import { ActionType } from "../action-types";
 import { Action } from "../actions"
-import {Product} from "../interface/product"
+import {Product} from "../interface"
 
 
 
-interface RepositoriesState {
+interface ProductsState {
   loading: boolean;
   error: string | null;
   data: {products: Product[], pagination: {totalPages: number}, tags: string[], brands: string[]};
@@ -16,8 +16,8 @@ const initialState = {
   data: {products: [], pagination: {totalPages: 0}, tags: [], brands: []}
 }
 
-const reducer = (state: RepositoriesState = initialState, action: Action
-  ): RepositoriesState => {
+const reducer = (state: ProductsState = initialState, action: Action
+  ): ProductsState => {
      switch (action.type) {
         case ActionType.FETCH_PRODUCTS:
           return { loading: true, error: null, data: {products: [], pagination: {totalPages: 0}, tags: [], brands: []} }
