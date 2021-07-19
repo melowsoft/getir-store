@@ -4,8 +4,11 @@ import { ActionType } from '../action-types';
 import { Action } from "../actions"
 import {CartItem, Product} from "../interface"
 import { filterData, compileTags, filterBrands, filterTags, compileBrands } from "../../helper"
+import {BASE_URL} from "../api"
+
 
 const itemPerPage = 16;
+
 
 export const fetchProducts = (
   pageNumber: number,
@@ -22,7 +25,7 @@ export const fetchProducts = (
 
     try {
 
-      const {data} = await axios.get('http://localhost:5000/products')
+      const {data} = await axios.get(`${BASE_URL}/products`)
 
       //compile tags for filter
       const tags = compileTags(data)

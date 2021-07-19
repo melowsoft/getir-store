@@ -1,0 +1,11 @@
+
+
+const {
+  REACT_APP_API_DEV_BASE_URL,
+  REACT_APP_API_PROD_BASE_URL,
+  NODE_ENV
+} = process.env
+
+export const BASE_URL: any = NODE_ENV === "production"
+? REACT_APP_API_PROD_BASE_URL
+: REACT_APP_API_DEV_BASE_URL
