@@ -63,12 +63,6 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 
-### Stack
-- React
-- Typescript
-- Redux
-- Json server
-
 ### Testing
 
 - To run test:
@@ -76,4 +70,11 @@ You will also see any lint errors in the console.
 ```bash
   npm run test
 ```
+
+### Stack
+- React
+- Typescript
+- Redux
+- Json server
+
 
