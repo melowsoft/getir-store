@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../styles/style-utils"
 
 export const Button = styled.div`
 width: 100%;
@@ -15,4 +16,11 @@ line-height: 20px;
 color: #FFFFFF;
 cursor: pointer;
 border-color: none;
+
+${
+  media.sm`
+  
+  `
+}
+
 `

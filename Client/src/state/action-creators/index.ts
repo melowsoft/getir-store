@@ -100,4 +100,12 @@ export const toggleBasket = () => {
       }) 
   }
 }
+export const toggleSideFilter = (status: string) => {
+  return async (dispatch: Dispatch<Action>) => {  
+      dispatch({
+        type: ActionType.TOGGLE_SIDE_FILTER,
+        payload: status
+      }) 
+  }
+}
 

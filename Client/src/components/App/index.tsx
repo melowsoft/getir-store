@@ -4,7 +4,7 @@ import {Container} from "./AppStyles"
 import { BrandIcon } from '../BrandIcon';
 import { Navbar } from '../Navbar';
 import { ContentWrapper } from '../ContentWrapper';
-import { ContenArea } from '../ContenArea';
+import { ContentArea } from '../ContentArea';
 
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
     <Container>
       <Navbar icon={<BrandIcon />}/>
       <ContentWrapper>
-        <ContenArea />
+        <ContentArea />
       </ContentWrapper>
     </Container>
   </Provider>

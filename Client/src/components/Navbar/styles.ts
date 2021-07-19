@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { primaryColor, navbarHeight } from "../../styles/global"
+import {media} from "../../styles/style-utils"
 
 export const Container = styled.div`
    background: ${primaryColor};
@@ -9,12 +10,13 @@ export const Container = styled.div`
    justify-content: center;
    align-items: center;
    position: fixed;
+   z-index: 1000000;
  `
 
  export const CartButton = styled.div`
  position: absolute;
  right: 104px;
- width: 129px;
+ width: 80px;
  height: 76px;
  display: flex;
  justify-content: center;
@@ -23,6 +25,12 @@ export const Container = styled.div`
 
   &:hover {
     background: #147594;
+  }
+
+  ${
+    media.sm`
+      right: 15px;
+    `
   }
  `
 
@@ -38,3 +46,18 @@ letter-spacing: 0.16px;
 color: #FFFFFF;
 margin-left: 4px;
 `
+
+export const MenuButton = styled.div`
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+
+  ${
+    media.md`
+
+    `
+  }
+`
+export const Icon = styled.img`
+  width: 30px;
+` 

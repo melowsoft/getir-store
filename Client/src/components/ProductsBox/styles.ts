@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "../../styles/style-utils"
 
 
 interface Props extends React.ComponentPropsWithoutRef<'div'> {
@@ -6,7 +7,13 @@ interface Props extends React.ComponentPropsWithoutRef<'div'> {
 }
 
 export const Container = styled.div`
-  width: 54%;
+  width: 60%;
+
+  ${
+    media.md`
+      width: 100%;
+    `
+  }
 `
 export const TypeFilter = styled.div`
 display: flex;

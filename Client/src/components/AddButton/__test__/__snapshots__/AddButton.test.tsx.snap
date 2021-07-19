@@ -2,7 +2,7 @@
 
 exports[`matches snapshot 1`] = `
 <div
-  className="sc-bdnxRM bbpzhJ"
+  className="sc-bdnxRM hEBIxC"
   data-testid="add-btn"
   onClick={[Function]}
 >

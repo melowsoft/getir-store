@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "../../styles/style-utils"
 
 export const Container = styled.div`
 width: 100%;
@@ -11,4 +12,10 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-column-gap: 24px;
 grid-row-gap: 21px;
+
+  ${
+    media.sm`
+    grid-template-columns: 1fr 1fr;
+    `
+  }
 `

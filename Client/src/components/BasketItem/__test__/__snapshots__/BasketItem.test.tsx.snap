@@ -5,20 +5,30 @@ exports[`matches snapshot 1`] = `
   className="sc-iCoGMd dYWLQi"
 >
   <div
-    className="sc-jrsJWt gnpSPj"
+    className="sc-jrsJWt kalrgg"
   >
+    <div
+      className="sc-crzoAE hfmyoP close-btn"
+      onClick={[Function]}
+    >
+      <img
+        alt="filter icon"
+        className="sc-dIsUp eoWJNn"
+        src="filter-icon.svg"
+      />
+    </div>
     <div
       className="sc-fujyAs eDHmge"
       data-testid="brand-logo"
     >
       <img
         alt="brand-logo"
-        className="sc-pNWdM eBgGzP"
+        className="sc-pNWdM gMSCoc"
         src="Logo.svg"
       />
     </div>
     <div
-      className="sc-kEqXSa kvaCuQ"
+      className="sc-kEqXSa bDwqqy"
       onClick={[Function]}
     >
       <svg>
@@ -33,79 +43,85 @@ exports[`matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="sc-crzoAE gnfrCh"
+    className="sc-bqGGPW gFFraJ"
   >
     <div
-      className="sc-bBjRSN bRDqDi"
+      className="sc-Arkif fGJwhU"
     >
       <div
-        className="sc-kLojOw dYCygm"
+        className="sc-khIgEk CvPyH menu"
       >
         <div
-          className="sc-bCwfaz"
+          className="sc-hTRkXV kyjcmo"
+          onClick={[Function]}
+        >
+          x
+        </div>
+        <div
+          className="sc-cxNHIi"
         >
           <p
-            className="sc-fFSPTT ewKuse"
+            className="sc-iemWCZ jtakIy"
           >
             Sorting
           </p>
           <div
-            className="sc-bkbkJK hMkxOU"
+            className="sc-dIvrsQ iwFhlO"
           >
             <div
-              className="sc-iemWCZ kyDYMU"
+              className="sc-hHEiqL dHgoxS"
             >
               <div
-                className="sc-lmgQwP iNLpFY"
+                className="sc-giAqHp kRJUrK"
               >
                 <div
-                  className="sc-iwajpm chYJNL"
+                  className="sc-lmgQwP fpirhD"
                   onClick={[Function]}
                 >
                   <svg>
                     selected-circle.svg
                   </svg>
                   <p
-                    className="sc-cxNHIi jHysL"
+                    className="sc-iJCRrE bDJUT"
                   >
                     Price low to high
                   </p>
                 </div>
                 <div
-                  className="sc-iwajpm chYJNL"
+                  className="sc-lmgQwP fpirhD"
                   onClick={[Function]}
                 >
                   <svg>
                     unselected-circle.svg
                   </svg>
                   <p
-                    className="sc-cxNHIi jHysL"
+                    className="sc-iJCRrE bDJUT"
                   >
                     Price high to low
                   </p>
                 </div>
                 <div
-                  className="sc-iwajpm chYJNL"
+                  className="sc-lmgQwP fpirhD"
                   onClick={[Function]}
                 >
                   <svg>
                     unselected-circle.svg
                   </svg>
                   <p
-                    className="sc-cxNHIi jHysL"
+                    className="sc-iJCRrE bDJUT"
                   >
                     New to old
                   </p>
                 </div>
                 <div
-                  className="sc-iwajpm chYJNL"
+                  className="sc-lmgQwP fpirhD"
                   onClick={[Function]}
                 >
                   <svg>
                     unselected-circle.svg
                   </svg>
                   <p
-                    className="sc-cxNHIi jHysL"
+                    className="sc-iJCRrE bDJUT"
                   >
                     Old to new
                   </p>
@@ -115,39 +131,39 @@ exports[`matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="sc-dIvrsQ gzHxjE"
+          className="sc-dlMDgC hjEWxQ"
         >
           <p
-            className="sc-fFSPTT ewKuse"
+            className="sc-iemWCZ jtakIy"
           >
             Brands
           </p>
           <div
-            className="sc-bkbkJK dBeLEQ"
+            className="sc-dIvrsQ gBctAa"
             height={230}
           >
             <div
-              className="sc-iemWCZ kyDYMU"
+              className="sc-hHEiqL dHgoxS"
             >
               <input
-                className="sc-hHEiqL jVgRot"
+                className="sc-kfYoZR iFXTJT"
                 onChange={[Function]}
                 placeholder="Search Brands"
                 type="text"
                 value=""
               />
               <div
-                className="sc-fKgJPI hZqJLd"
+                className="sc-iwajpm jeqwbY"
               >
                 <div
-                  className="sc-dlMDgC fSCzFq"
+                  className="sc-fKgJPI dhubWG"
                   onClick={[Function]}
                 >
                   <svg>
                     selected-box.svg
                   </svg>
                   <p
-                    className="sc-kfYoZR iGNVed"
+                    className="sc-bCwfaz cGFLA-d"
                   >
                     ALL (
                     0
@@ -159,39 +175,39 @@ exports[`matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="sc-bYwzuL caWyjY"
+          className="sc-iklJeh eZZNhe"
         >
           <p
-            className="sc-fFSPTT ewKuse"
+            className="sc-iemWCZ jtakIy"
           >
             Tags
           </p>
           <div
-            className="sc-bkbkJK dBeLEQ"
+            className="sc-dIvrsQ gBctAa"
             height={230}
           >
             <div
-              className="sc-iemWCZ kyDYMU"
+              className="sc-hHEiqL dHgoxS"
             >
               <input
-                className="sc-hHEiqL jVgRot"
+                className="sc-kfYoZR iFXTJT"
                 onChange={[Function]}
                 placeholder="Search Tags"
                 type="text"
                 value=""
               />
               <div
-                className="sc-ezzafa fHYJBb"
+                className="sc-kLojOw fQeGFO"
               >
                 <div
-                  className="sc-iJCRrE fxhHCm"
+                  className="sc-ezzafa cjpNJE"
                   onClick={[Function]}
                 >
                   <svg>
                     selected-box.svg
                   </svg>
                   <p
-                    className="sc-giAqHp iqWgwE"
+                    className="sc-bYwzuL brwxbB"
                   >
                     ALL (
                     0
@@ -204,34 +220,199 @@ exports[`matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-cTJkRt chgna-D"
+        className="sc-jJMGnK hkzeAK"
+      >
+        <div
+          className="sc-cxNHIi"
+        >
+          <p
+            className="sc-iemWCZ jtakIy"
+          >
+            Sorting
+          </p>
+          <div
+            className="sc-dIvrsQ iwFhlO"
+          >
+            <div
+              className="sc-hHEiqL dHgoxS"
+            >
+              <div
+                className="sc-giAqHp kRJUrK"
+              >
+                <div
+                  className="sc-lmgQwP fpirhD"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    selected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-iJCRrE bDJUT"
+                  >
+                    Price low to high
+                  </p>
+                </div>
+                <div
+                  className="sc-lmgQwP fpirhD"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    unselected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-iJCRrE bDJUT"
+                  >
+                    Price high to low
+                  </p>
+                </div>
+                <div
+                  className="sc-lmgQwP fpirhD"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    unselected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-iJCRrE bDJUT"
+                  >
+                    New to old
+                  </p>
+                </div>
+                <div
+                  className="sc-lmgQwP fpirhD"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    unselected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-iJCRrE bDJUT"
+                  >
+                    Old to new
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-dlMDgC hjEWxQ"
+        >
+          <p
+            className="sc-iemWCZ jtakIy"
+          >
+            Brands
+          </p>
+          <div
+            className="sc-dIvrsQ gBctAa"
+            height={230}
+          >
+            <div
+              className="sc-hHEiqL dHgoxS"
+            >
+              <input
+                className="sc-kfYoZR iFXTJT"
+                onChange={[Function]}
+                placeholder="Search Brands"
+                type="text"
+                value=""
+              />
+              <div
+                className="sc-iwajpm jeqwbY"
+              >
+                <div
+                  className="sc-fKgJPI dhubWG"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    selected-box.svg
+                  </svg>
+                  <p
+                    className="sc-bCwfaz cGFLA-d"
+                  >
+                    ALL (
+                    0
+                    )
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iklJeh eZZNhe"
+        >
+          <p
+            className="sc-iemWCZ jtakIy"
+          >
+            Tags
+          </p>
+          <div
+            className="sc-dIvrsQ gBctAa"
+            height={230}
+          >
+            <div
+              className="sc-hHEiqL dHgoxS"
+            >
+              <input
+                className="sc-kfYoZR iFXTJT"
+                onChange={[Function]}
+                placeholder="Search Tags"
+                type="text"
+                value=""
+              />
+              <div
+                className="sc-kLojOw fQeGFO"
+              >
+                <div
+                  className="sc-ezzafa cjpNJE"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    selected-box.svg
+                  </svg>
+                  <p
+                    className="sc-bYwzuL brwxbB"
+                  >
+                    ALL (
+                    0
+                    )
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-dPaNzc iHIBaR"
       >
         <h4
-          className="sc-iklJeh evroew"
+          className="sc-hiKfDv fYrDsz"
         >
           Products
         </h4>
         <div
-          className="sc-jNnpgg hVNdHU"
+          className="sc-bBjRSN fnoqUv"
         >
           <div
-            className="sc-dPaNzc kGqTeg"
+            className="sc-cOifOu fMMFpb"
             onClick={[Function]}
           >
             Mug
           </div>
           <div
-            className="sc-dPaNzc kqTCrY"
+            className="sc-cOifOu bTLRiT"
             onClick={[Function]}
           >
             Shirt
           </div>
         </div>
         <div
-          className="sc-efHYUO hIswCw"
+          className="sc-jNnpgg giAWqf"
         />
         <div
-          className="sc-jJMGnK craUyb"
+          className="sc-gXfVKN kDxCti"
         >
           <ul
             className="pagination"
@@ -250,7 +431,7 @@ exports[`matches snapshot 1`] = `
                 tabIndex="0"
               >
                 <div
-                  className="sc-gXfVKN hklMiA"
+                  className="sc-ciSkZP gfaCBS"
                 >
                   <svg>
                     prev.svg
@@ -276,7 +457,7 @@ exports[`matches snapshot 1`] = `
                 tabIndex="0"
               >
                 <div
-                  className="sc-hiKfDv ljmpVY"
+                  className="sc-cBoqAE bHmcrx"
                 >
                   <div>
                     Next
@@ -292,7 +473,7 @@ exports[`matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-dIsUp edCiwp"
+        className="sc-ksluID kypamZ"
         data-testid="basket-box"
       />
     </div>

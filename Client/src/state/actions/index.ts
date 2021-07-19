@@ -7,6 +7,10 @@ interface FetchProductsAction {
 interface ToggleBasketAction {
   type: ActionType.TOGGLE_BASKET;
 }
+interface ToggleSideFilterAction {
+  type: ActionType.TOGGLE_SIDE_FILTER;
+  payload: string;
+}
 interface FetchProductsSuccessAction {
   type: ActionType.FETCH_PRODUCTS_SUCCESS;
   payload: {products: Product[], pagination: {totalPages: number}, tags: string[], brands: string[]};
@@ -32,3 +36,4 @@ export type Action =
 | AddProductToBasket
 | RemoveProductFromBasket
 | ToggleBasketAction
+| ToggleSideFilterAction

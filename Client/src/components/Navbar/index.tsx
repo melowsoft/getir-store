@@ -5,15 +5,19 @@ import { useTypedSelector } from '../../hooks/useTypedSelector'
 import {
   CartButton,
     CartTotal,
-    Container
+    Container,
+    MenuButton,
+    Icon
 } from "./styles"
+import  FilterIcon from "../../assets/svg/filter-icon.svg"
 
 interface Props {
   icon?: JSX.Element
 }
 
 export const Navbar: React.FC<Props> = ({icon}: Props) => {
-  const { toggleBasket } = useActions();
+  const { toggleBasket, toggleSideFilter } = useActions();
+
   const { total } = useTypedSelector((state) => state.basket)
 
   const onBasketToggle = () => {
@@ -24,6 +28,9 @@ export const Navbar: React.FC<Props> = ({icon}: Props) => {
 
     return (
       <Container>
+        <MenuButton className="close-btn" onClick={() => toggleSideFilter("open")}>
+          <Icon src={FilterIcon} alt="filter icon"/>
+        </MenuButton>
         {icon && icon}
         <CartButton onClick={() => onBasketToggle()}>
           <BasketIcon />

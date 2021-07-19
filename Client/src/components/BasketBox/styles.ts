@@ -1,8 +1,19 @@
 import styled from "styled-components";
+import { media } from "../../styles/style-utils"
 
 
 export const Container = styled.div`
-    width: 22%;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 70px;
+    background: #ffffff;
+    z-index: 1000;
+    ${
+        media.sm`
+        width: 100%;
+        `
+    }
 `
 export const BasketWrapper = styled.div`
 border: 8px solid #1EA4CE;
