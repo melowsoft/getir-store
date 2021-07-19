@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="sc-bdnxRM gcpWuX"
+  data-testid="brand-logo"
+>
+  <img
+    alt="brand-logo"
+    className="sc-gtsrHT ldihJO"
+    src="Logo.svg"
+  />
+</div>
+`;
