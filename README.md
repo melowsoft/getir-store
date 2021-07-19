@@ -69,6 +69,7 @@ You will also see any lint errors in the console.
 - Redux
 - Json server
 
+### Testing
 
 - To run test:
 
