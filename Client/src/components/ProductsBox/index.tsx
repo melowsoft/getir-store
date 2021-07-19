@@ -5,6 +5,7 @@ import { ProductList } from '../ProductList'
 import { useTypedSelector } from '../../hooks/useTypedSelector' 
 
 import { Container, FilterItem, TypeFilter } from "./styles"
+import { ProductLoder } from '../ProductLoader'
 
 interface Props {
   productType: string;
@@ -33,7 +34,8 @@ export const ProductBox: React.FC<Props> = ({productType, setProductType, onChan
             Shirt
           </FilterItem>
       </TypeFilter>
-      <ProductList products={data.products}/>
+      <ProductList products={data.products} loading={loading}/>
+     
       <PaginationComp onChange={onChange} pageCount={data.pagination.totalPages}/>
     </Container>
     )
