@@ -25,7 +25,7 @@ export const fetchProducts = (
 
     try {
 
-      const {data} = await axios.get(`${BASE_URL}/db`)
+      const {data} = await axios.get(`${BASE_URL}/products`)
 
       //compile tags for filter
       const tags = compileTags(data)
