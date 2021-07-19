@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const AddButton: React.FC<Props> = ({title, onAdd, product}: Props) => (
-  <Button onClick={() => onAdd(product)}>
+  <Button data-testid="add-btn" onClick={() => onAdd(product)}>
     {title}
   </Button>
 )

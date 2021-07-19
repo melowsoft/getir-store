@@ -54,6 +54,8 @@
     "@types/react-js-pagination": "^3.0.4",
     "@types/react-paginate": "^7.1.1",
     "@types/react-scroll": "^1.8.3",
-    "@types/styled-components": "^5.1.11"
+    "@types/styled-components": "^5.1.11",
+    "jest-dom": "^4.0.0",
+    "react-test-renderer": "^17.0.2"
   }
 }

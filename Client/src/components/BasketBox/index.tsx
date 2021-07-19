@@ -6,17 +6,15 @@ import { useTypedSelector } from '../../hooks/useTypedSelector'
 
 import {  BasketWrapper, CheckoutButton, Container, Group, ButtonWrap  } from "./styles"
 
-interface Props {
-  showBasket: boolean
-}
 
-export const BasketBox: React.FC<Props> = ({showBasket}: Props) => {
+
+export const BasketBox: React.FC = () => {
 
   const { basket, total } = useTypedSelector((state) => state.basket)
   const { show } = useTypedSelector((state) => state.showBasket)
-   return (<Container>
+   return (<Container data-testid="basket-box">
      
- {show && total > 0 && (<BasketWrapper>
+  {show && total > 0 && (<BasketWrapper>
             <Group>
               {
                 basket.map((item: BasketPick, index: number) => (

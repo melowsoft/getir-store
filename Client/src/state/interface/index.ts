@@ -1,6 +1,6 @@
 export interface Product {
   tags: string[];
-  price: 10.99;
+  price: number;
   name: string;
   description: string;
   slug: string;

@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="sc-iCoGMd dYWLQi"
+>
+  <div
+    className="sc-jrsJWt gnpSPj"
+  >
+    <div
+      className="sc-fujyAs eDHmge"
+      data-testid="brand-logo"
+    >
+      <img
+        alt="brand-logo"
+        className="sc-pNWdM eBgGzP"
+        src="Logo.svg"
+      />
+    </div>
+    <div
+      className="sc-kEqXSa kvaCuQ"
+      onClick={[Function]}
+    >
+      <svg>
+        basket.svg
+      </svg>
+      <p
+        className="sc-iqAclL giIpgf"
+      >
+        ₺ 
+        0
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-crzoAE gnfrCh"
+  >
+    <div
+      className="sc-bBjRSN bRDqDi"
+    >
+      <div
+        className="sc-kLojOw dYCygm"
+      >
+        <div
+          className="sc-bCwfaz"
+        >
+          <p
+            className="sc-fFSPTT ewKuse"
+          >
+            Sorting
+          </p>
+          <div
+            className="sc-bkbkJK hMkxOU"
+          >
+            <div
+              className="sc-iemWCZ kyDYMU"
+            >
+              <div
+                className="sc-lmgQwP iNLpFY"
+              >
+                <div
+                  className="sc-iwajpm chYJNL"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    selected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-cxNHIi jHysL"
+                  >
+                    Price low to high
+                  </p>
+                </div>
+                <div
+                  className="sc-iwajpm chYJNL"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    unselected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-cxNHIi jHysL"
+                  >
+                    Price high to low
+                  </p>
+                </div>
+                <div
+                  className="sc-iwajpm chYJNL"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    unselected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-cxNHIi jHysL"
+                  >
+                    New to old
+                  </p>
+                </div>
+                <div
+                  className="sc-iwajpm chYJNL"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    unselected-circle.svg
+                  </svg>
+                  <p
+                    className="sc-cxNHIi jHysL"
+                  >
+                    Old to new
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-dIvrsQ gzHxjE"
+        >
+          <p
+            className="sc-fFSPTT ewKuse"
+          >
+            Brands
+          </p>
+          <div
+            className="sc-bkbkJK dBeLEQ"
+            height={230}
+          >
+            <div
+              className="sc-iemWCZ kyDYMU"
+            >
+              <input
+                className="sc-hHEiqL jVgRot"
+                onChange={[Function]}
+                placeholder="Search Brands"
+                type="text"
+                value=""
+              />
+              <div
+                className="sc-fKgJPI hZqJLd"
+              >
+                <div
+                  className="sc-dlMDgC fSCzFq"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    selected-box.svg
+                  </svg>
+                  <p
+                    className="sc-kfYoZR iGNVed"
+                  >
+                    ALL (
+                    0
+                    )
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-bYwzuL caWyjY"
+        >
+          <p
+            className="sc-fFSPTT ewKuse"
+          >
+            Tags
+          </p>
+          <div
+            className="sc-bkbkJK dBeLEQ"
+            height={230}
+          >
+            <div
+              className="sc-iemWCZ kyDYMU"
+            >
+              <input
+                className="sc-hHEiqL jVgRot"
+                onChange={[Function]}
+                placeholder="Search Tags"
+                type="text"
+                value=""
+              />
+              <div
+                className="sc-ezzafa fHYJBb"
+              >
+                <div
+                  className="sc-iJCRrE fxhHCm"
+                  onClick={[Function]}
+                >
+                  <svg>
+                    selected-box.svg
+                  </svg>
+                  <p
+                    className="sc-giAqHp iqWgwE"
+                  >
+                    ALL (
+                    0
+                    )
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-cTJkRt chgna-D"
+      >
+        <h4
+          className="sc-iklJeh evroew"
+        >
+          Products
+        </h4>
+        <div
+          className="sc-jNnpgg hVNdHU"
+        >
+          <div
+            className="sc-dPaNzc kGqTeg"
+            onClick={[Function]}
+          >
+            Mug
+          </div>
+          <div
+            className="sc-dPaNzc kqTCrY"
+            onClick={[Function]}
+          >
+            Shirt
+          </div>
+        </div>
+        <div
+          className="sc-efHYUO hIswCw"
+        />
+        <div
+          className="sc-jJMGnK craUyb"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className="previous disabled"
+            >
+              <a
+                aria-disabled="true"
+                aria-label="Previous page"
+                className="prev-link-class"
+                onClick={[Function]}
+                onKeyPress={[Function]}
+                rel="prev"
+                role="button"
+                tabIndex="0"
+              >
+                <div
+                  className="sc-gXfVKN hklMiA"
+                >
+                  <svg>
+                    prev.svg
+                  </svg>
+                   
+                  <div>
+                    Prev
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li
+              className="next"
+            >
+              <a
+                aria-disabled="false"
+                aria-label="Next page"
+                className="next-link-class"
+                onClick={[Function]}
+                onKeyPress={[Function]}
+                rel="next"
+                role="button"
+                tabIndex="0"
+              >
+                <div
+                  className="sc-hiKfDv ljmpVY"
+                >
+                  <div>
+                    Next
+                  </div>
+                   
+                  <svg>
+                    next.svg
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        className="sc-dIsUp edCiwp"
+        data-testid="basket-box"
+      />
+    </div>
+  </div>
+</div>
+`;
