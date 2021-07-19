@@ -69,3 +69,10 @@ You will also see any lint errors in the console.
 - Redux
 - Json server
 
+
+- To run test:
+
+```bash
+  npm run test
+```
+
