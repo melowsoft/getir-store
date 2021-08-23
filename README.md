@@ -2,7 +2,7 @@
 
 ## Summary
 
-This project is a mini e-commerce app for shirts and mugs. 
+This project is a sample mini e-commerce app for shirts and mugs. 
 It was bootstrapped with create-react-app typescript.
 
 ## Features
